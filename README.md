@@ -1,2 +1,2 @@
 # school-
-programming in schiil
+programming in school
