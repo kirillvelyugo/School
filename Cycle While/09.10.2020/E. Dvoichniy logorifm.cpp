@@ -6,10 +6,9 @@ int main()
     int n,k=0,s=1;
     cin >> n;
     
-    while (s<=n){
+    while ( s<n ){
         s*=2;
         k++;
-        
     }
     
     
@@ -17,4 +16,3 @@ int main()
     
     return 0;
 } 
-// При точной степени выводит не корректно
