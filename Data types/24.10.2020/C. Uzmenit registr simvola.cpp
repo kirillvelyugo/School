@@ -1,19 +1,18 @@
 #include <iostream>
 using namespace std;
 
-
-char izmreg (char c){
-    if (c >='a' && c<='z'){
-        return c + 'A' -'a';
-    }else if (c >='A' && c<='Z'){
-        return c + 'a' - 'A' ;
+char izmreg (char c) {
+    if (isupper(c)){
+    return tolower(c);
+    }else{
+    return toupper(c);
     }
 }
 
-int main(){
-    char n;
-    cin >> n;
-    cout << izmreg(n) << '\n';
-
+int main() {
+    char c;
+    cin >> c;
+    cout << izmreg(c);
+    
     return 0;
 }
