@@ -2,31 +2,27 @@
 #include <string>
 using namespace std;
 
-int main()
-{
-    int p;
-    string s,s1,s2;
-    getline (cin,s);
+int main(){
+    int kor;
+    string nap;
+    cin >> nap >> kor;
     
-    p = s.find(" ");
-    if (p != string::npos){
-        s1 = s.substr(0,p);
-        s2 = s.substr(p+1);
+    if (kor == 0){
+        cout << '0' << ' ' << '0' << '\n';
+        return 0;
     }
     
-    if ( s1 == "North" ){
+    if (nap == "North" ){                                   //меняется y, x остается
+        cout << '0' << ' ' << kor << '\n';
+    } else if (nap == "South" ){
+        cout << '0' << ' ' << '-' <<kor << '\n';
+    } else if (nap == "East" ){                             //меняется x, y остается
+        cout << kor << ' ' << '0' << '\n';                  
+    } else if (nap == "West" ){
+        cout << '-' <<kor << ' ' << '0' << '\n';
         
-        cout << 0 << ' ' << s2 << '\n';
-    }else if ( s1 == "South" ){
-        
-        cout << 0 << ' ' << '-' << s2 << '\n';
-    }else if( s1 == "East" ){
-        
-        cout << '-' << s2 << ' ' << 0 << '\n';
-    }else if( s1 == "West" ){
-        
-        cout << s2 << ' ' << 0 << '\n';
-    }
+    } 
 
     return 0;
 }
+
