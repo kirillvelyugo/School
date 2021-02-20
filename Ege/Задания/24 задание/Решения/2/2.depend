@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1613207120 source:c:\users\public\documents\10 Класс\velyugo\portablegit\rep\school\ege\Задания\24 задание\Решения\2\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+
