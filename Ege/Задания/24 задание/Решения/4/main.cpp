@@ -14,7 +14,7 @@ int main()
             countSkob++;
         }
         if (countSkob == 10000){
-            cout << i;
+            cout << i + 1;
             return 0;
         }
     }
