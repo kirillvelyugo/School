@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1619253029 source:c:\users\302-2\desktop\Новая папка\25-22\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+
